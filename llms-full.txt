@@ -1,0 +1,51 @@
+# Geotechnicalengineering — Knoxville
+
+> Geotechnical engineering services in Knoxville, United States.
+
+## Services
+- [Anchors](https://knoxville.geotechnicalengineering.biz/anchors/)
+- [Atterberg Limits](https://knoxville.geotechnicalengineering.biz/atterberg-limits/)
+- [Cbr Road](https://knoxville.geotechnicalengineering.biz/cbr-road/)
+- [Cpt Test](https://knoxville.geotechnicalengineering.biz/cpt-test/)
+- [Deep Excavations](https://knoxville.geotechnicalengineering.biz/deep-excavations/)
+- [Excavation Monitoring](https://knoxville.geotechnicalengineering.biz/excavation-monitoring/)
+- [Excavations](https://knoxville.geotechnicalengineering.biz/excavations/)
+- [Flexible Pavement](https://knoxville.geotechnicalengineering.biz/flexible-pavement/)
+- [Footings](https://knoxville.geotechnicalengineering.biz/footings/)
+- [Foundations](https://knoxville.geotechnicalengineering.biz/foundations/)
+- [Grain Size](https://knoxville.geotechnicalengineering.biz/grain-size/)
+- [Ground Improvement](https://knoxville.geotechnicalengineering.biz/ground-improvement/)
+- [Grouting](https://knoxville.geotechnicalengineering.biz/grouting/)
+- [In Situ Permeability](https://knoxville.geotechnicalengineering.biz/in-situ-permeability/)
+- [Investigation](https://knoxville.geotechnicalengineering.biz/investigation/)
+- [Lab In Situ](https://knoxville.geotechnicalengineering.biz/lab-in-situ/)
+- [Laboratory](https://knoxville.geotechnicalengineering.biz/laboratory/)
+- [Liquefaction](https://knoxville.geotechnicalengineering.biz/liquefaction/)
+- [Masw](https://knoxville.geotechnicalengineering.biz/masw/)
+- [Mat Foundations](https://knoxville.geotechnicalengineering.biz/mat-foundations/)
+- [Piles](https://knoxville.geotechnicalengineering.biz/piles/)
+- [Proctor Tests](https://knoxville.geotechnicalengineering.biz/proctor-tests/)
+- [Resistivity](https://knoxville.geotechnicalengineering.biz/resistivity/)
+- [Retaining Walls](https://knoxville.geotechnicalengineering.biz/retaining-walls/)
+- [Rigid Pavement](https://knoxville.geotechnicalengineering.biz/rigid-pavement/)
+- [Road Geotechnics](https://knoxville.geotechnicalengineering.biz/road-geotechnics/)
+- [Sand Cone Density](https://knoxville.geotechnicalengineering.biz/sand-cone-density/)
+- [Seismic](https://knoxville.geotechnicalengineering.biz/seismic/)
+- [Seismic Isolation](https://knoxville.geotechnicalengineering.biz/seismic-isolation/)
+- [Seismic Microzonation](https://knoxville.geotechnicalengineering.biz/seismic-microzonation/)
+- [Seismic Refraction](https://knoxville.geotechnicalengineering.biz/seismic-refraction/)
+- [Slope Stability](https://knoxville.geotechnicalengineering.biz/slope-stability/)
+- [Slopes](https://knoxville.geotechnicalengineering.biz/slopes/)
+- [Soft Ground Tunnels](https://knoxville.geotechnicalengineering.biz/soft-ground-tunnels/)
+- [Spt Drilling](https://knoxville.geotechnicalengineering.biz/spt-drilling/)
+- [Stone Columns](https://knoxville.geotechnicalengineering.biz/stone-columns/)
+- [Test Pits](https://knoxville.geotechnicalengineering.biz/test-pits/)
+- [Triaxial](https://knoxville.geotechnicalengineering.biz/triaxial/)
+- [Vibrocompaction](https://knoxville.geotechnicalengineering.biz/vibrocompaction/)
+
+## Contact
+- Website: https://knoxville.geotechnicalengineering.biz/
+
+## About
+This site provides geotechnical engineering services in Knoxville, United States.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).
