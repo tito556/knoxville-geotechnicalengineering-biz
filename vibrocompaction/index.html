@@ -73,7 +73,24 @@ details summary{font-weight:600;color:#14532D;list-style:none}
 *{margin:0;padding:0;box-sizing:border-box}
 .dd a:hover{background:#F5F5F5}
 .nav-item.has-dd:hover{padding-bottom:1.5rem}
-.project-card{background:#FFF;border:1px solid #E5E7EB;overflow:hidden;transition:all .2s;display:block}</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head><body>
+.project-card{background:#FFF;border:1px solid #E5E7EB;overflow:hidden;transition:all .2s;display:block}</style><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1F2937"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head><body>
 
 <nav class="navbar">
     <div class="logo-area">
@@ -81,12 +98,12 @@ details summary{font-weight:600;color:#14532D;list-style:none}
         <div class="logo-text">Geotechnical Engineering</div>
     </div>
     <div class="nav">
-        <div class="nav-item has-dd"><a href="/investigation/" class="nav-cat-link" style="color:inherit;text-decoration:none">Investigation</a> <span>▾</span><div class="dd"><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="/lab-in-situ/" class="nav-cat-link" style="color:inherit;text-decoration:none">In-Situ Testing</a> <span>▾</span><div class="dd"><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="nav-item has-dd"><a href="/laboratory/" class="nav-cat-link" style="color:inherit;text-decoration:none">Laboratory</a> <span>▾</span><div class="dd"><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a><a href="/atterberg-limits/">Atterberg limits</a></div></div><div class="nav-item has-dd"><a href="/foundations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Foundations</a> <span>▾</span><div class="dd"><a href="/piles/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="/slopes/" class="nav-cat-link" style="color:inherit;text-decoration:none">Slopes & Walls</a> <span>▾</span><div class="dd"><a href="/slope-stability/">Slope stability analysis</a><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a></div></div><div class="nav-item has-dd"><a href="/ground-improvement/" class="nav-cat-link" style="color:inherit;text-decoration:none">Ground improvement</a> <span>▾</span><div class="dd"><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="/excavations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Underground Excavations</a> <span>▾</span><div class="dd"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div><div class="nav-item has-dd"><a href="/road-geotechnics/" class="nav-cat-link" style="color:inherit;text-decoration:none">Roadway</a> <span>▾</span><div class="dd"><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a><a href="/cbr-road/">CBR study for road design</a></div></div><div class="nav-item has-dd"><a href="/seismic/" class="nav-cat-link" style="color:inherit;text-decoration:none">Seismic</a> <span>▾</span><div class="dd"><a href="/liquefaction/">Soil liquefaction analysis</a><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a></div></div>
+        <div class="nav-item has-dd"><a href="/investigation/" class="nav-cat-link" style="color:inherit;text-decoration:none">Investigation</a> <span>▾</span><div class="dd"><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="nav-item has-dd"><a href="/lab-in-situ/" class="nav-cat-link" style="color:inherit;text-decoration:none">In-Situ</a> <span>▾</span><div class="dd"><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="nav-item has-dd"><a href="/laboratory/" class="nav-cat-link" style="color:inherit;text-decoration:none">Laboratory</a> <span>▾</span><div class="dd"><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a><a href="/atterberg-limits/">Atterberg limits</a></div></div><div class="nav-item has-dd"><a href="/foundations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Foundations</a> <span>▾</span><div class="dd"><a href="/piles/">Pile foundation design</a></div></div><div class="nav-item has-dd"><a href="/slopes/" class="nav-cat-link" style="color:inherit;text-decoration:none">Slopes & Walls</a> <span>▾</span><div class="dd"><a href="/slope-stability/">Slope stability analysis</a><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a></div></div><div class="nav-item has-dd"><a href="/ground-improvement/" class="nav-cat-link" style="color:inherit;text-decoration:none">Improvement</a> <span>▾</span><div class="dd"><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="nav-item has-dd"><a href="/excavations/" class="nav-cat-link" style="color:inherit;text-decoration:none">Excavations</a> <span>▾</span><div class="dd"><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div><div class="nav-item has-dd"><a href="/road-geotechnics/" class="nav-cat-link" style="color:inherit;text-decoration:none">Roadway</a> <span>▾</span><div class="dd"><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a><a href="/cbr-road/">CBR study for road design</a></div></div><div class="nav-item has-dd"><a href="/seismic/" class="nav-cat-link" style="color:inherit;text-decoration:none">Seismic</a> <span>▾</span><div class="dd"><a href="/liquefaction/">Soil liquefaction analysis</a><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a></div></div>
     </div>
 </nav>
 
 <header class="hero"><div class="hero-inner">
-    <div class="crumb-e167-e167"><a href="/">← Home</a> · Ground improvement</div>
+    <div class="crumb-e167-e167"><a href="/">← Home</a> · Improvement</div>
     <h1>Vibrocompaction Design in Knoxville: Stabilizing Loose Soils Without Overexcavation</h1>
     <p class="together">Together, we solve the challenges of tomorrow.</p>
     <a class="hero-cta" href="#main-content">SEE MORE →</a>
@@ -119,6 +136,8 @@ details summary{font-weight:600;color:#14532D;list-style:none}
     <section class="block video-block" style="padding:3rem 1.5rem">
       <div style="max-width:1200px;margin:0 auto">
         <h2 style="margin-bottom:1rem;font-weight:700">Visual overview</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
         <div class="video-wrap" style="position:relative;max-width:600px;margin:1rem auto 0;aspect-ratio:16/9;border-radius:8px;overflow:hidden">
           <iframe src="https://www.youtube.com/embed/w9N8hmGhstw" title="Explanatory video" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" loading="lazy" allowfullscreen allow="accelerometer;encrypted-media;gyroscope;picture-in-picture"></iframe>
         </div>
@@ -139,6 +158,8 @@ details summary{font-weight:600;color:#14532D;list-style:none}
         .sub-svc-grid-e167 > a.sub-svc-link-e167:hover h3 { color:#A16207; }</style>
       <div style="max-width:1200px;margin:0 auto">
         <h2 style="margin-bottom:1.5rem;font-weight:700">Additional services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
         <div class="sub-svc-grid-e167-e167">
           <div class="sub-svc"><div class="sub-svc-num" style="color:#A16207;font-weight:700;font-size:.85rem;letter-spacing:.1em">01</div><h3 style="color:#14532D;font-size:1.1rem;margin:.3rem 0 .5rem">Vibrocompaction Design Package</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Probe grid layout, lift and backfill specifications, real-time acceptance criteria based on amperage and SPT correlation, and post-treatment testing schedule for your Knox County permit package.</p></div><div class="sub-svc"><div class="sub-svc-num" style="color:#A16207;font-weight:700;font-size:.85rem;letter-spacing:.1em">02</div><h3 style="color:#14532D;font-size:1.1rem;margin:.3rem 0 .5rem">QA/QC Field Verification</h3><p style="color:#333;line-height:1.65;font-size:.93rem">Pre- and post-densification SPT borings, relative density calculations, and a signed final report documenting compliance with the project’s bearing capacity and settlement requirements.</p></div>
         </div>
@@ -147,7 +168,9 @@ details summary{font-weight:600;color:#14532D;list-style:none}
 
 <section class="section"><h2>Reference standards</h2><p>ASTM D1586-18, IBC 2021 Section 1805, ASCE 7-22 Chapter 20</p></section>
 
-<section class="section"><h2>Common questions</h2><details><summary>What does vibrocompaction design cost for a typical Knoxville commercial lot?</summary><p>For a commercial pad under two acres in the Knoxville area, the design and QA/QC package generally runs between US$1,680 and US$4,900, depending on the number of probe points, treatment depth, and the verification boring count the geotechnical engineer of record requires.</p></details><details><summary>How deep can vibrocompaction treat the loose soils we find along the Tennessee River?</summary><p>With standard rigs we can design for treatment down to about 65 feet. The actual limit depends on the soil profile—if the loose zone sits on competent bedrock from the Knox Group, we stop at refusal and adjust the grid to densify right to the contact.</p></details><details><summary>Does vibrocompaction work in silty sands, or do we need stone columns?</summary><p>It works up to a point. When the fines content stays below 12 to 15 percent, vibrocompaction is usually efficient. Above that, the silt dampens the vibrations and we often shift the design to stone columns to get both densification and drainage.</p></details><details><summary>How do you verify the soil actually got denser after treatment?</summary><p>We run SPT borings at specified locations before and after the work, comparing N-values directly. We also track the vibrator’s amperage during every probe penetration and withdrawal, which gives a continuous indirect measure of density improvement.</p></details></section>
+<section class="section"><h2>Common questions</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+<details><summary>What does vibrocompaction design cost for a typical Knoxville commercial lot?</summary><p>For a commercial pad under two acres in the Knoxville area, the design and QA/QC package generally runs between US$1,680 and US$4,900, depending on the number of probe points, treatment depth, and the verification boring count the geotechnical engineer of record requires.</p></details><details><summary>How deep can vibrocompaction treat the loose soils we find along the Tennessee River?</summary><p>With standard rigs we can design for treatment down to about 65 feet. The actual limit depends on the soil profile—if the loose zone sits on competent bedrock from the Knox Group, we stop at refusal and adjust the grid to densify right to the contact.</p></details><details><summary>Does vibrocompaction work in silty sands, or do we need stone columns?</summary><p>It works up to a point. When the fines content stays below 12 to 15 percent, vibrocompaction is usually efficient. Above that, the silt dampens the vibrations and we often shift the design to stone columns to get both densification and drainage.</p></details><details><summary>How do you verify the soil actually got denser after treatment?</summary><p>We run SPT borings at specified locations before and after the work, comparing N-values directly. We also track the vibrator’s amperage during every probe penetration and withdrawal, which gives a continuous indirect measure of density improvement.</p></details></section>
 
 
     <section class="block map-block" style="padding:3rem 1.5rem">
@@ -160,7 +183,7 @@ details summary{font-weight:600;color:#14532D;list-style:none}
         <link rel="stylesheet" href="/css/leaflet.css">
         <script src="/js/leaflet.js"></script>
         <script>
-        (function(){
+(function(){
           var m=L.map("map_a716f4",{zoomControl:true,attributionControl:true}).setView([35.9604,-83.921],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
