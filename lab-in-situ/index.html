@@ -113,7 +113,7 @@ header nav a,.menu a{font-size:.78rem !important}
 }
 </style>
 <style id="layout-defensive">
-html,body{overflow-x:hidden;max-width:100vw}
+body{overflow-x:clip;max-width:100vw}
 body>*{max-width:100vw}
 @media (min-width:901px){
   aside{position:relative}
@@ -124,6 +124,62 @@ body>*{max-width:100vw}
   aside{width:100% !important;position:static !important;height:auto !important}
   .navbar{flex-wrap:wrap}
 }
+</style>
+<style id="navbar-fixed-override">
+nav.navbar,.header-top,.main-header{position:fixed !important;top:0 !important;left:0 !important;right:0 !important;z-index:1010 !important}
+body{padding-top:60px}
+.hero,.hero-inner,header.hero{padding-top:1rem !important}
+@media (max-width:900px){body{padding-top:90px}}
+</style>
+<style id="sidebar-hover-fix-v2">
+/* Adaptativo: hover preserva color heredado (white en dark sidebar, dark en light) */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+/* Bg sutil que funciona en cualquier fondo */
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
+</style>
+<style id="cat-toggle-no-box">
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+.cat-arrow{display:inline-block}
+</style>
+<style id="nav-arrow-no-box">
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+</style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
 </style>
 </head><body>
 
@@ -148,8 +204,6 @@ body>*{max-width:100vw}
 <p>In-Situ in Knoxville, Tennessee, provides a direct assessment of subsurface conditions without the disturbance associated with sampling and transportation to a laboratory. Our comprehensive <a href="/investigation/">geotechnical investigation</a> services integrate these field methods to evaluate the complex geology of the Tennessee Valley, which is characterized by residual soils overlying Cambrian and Ordovician formations, including the Knox Group dolomites and limestones. Local regulations, referencing the 2018 International Building Code (IBC) as adopted by the City of Knoxville, mandate specific in-situ tests to verify design parameters like bearing capacity and liquefaction potential, particularly in areas underlain by the deep, stiff clays and silts typical of the Ridge and Valley physiographic province. A critical component of this work is the <a href="/cpt-test/">Cone Penetration Test (CPT)</a>, which provides continuous, high-resolution data on soil stratigraphy and is especially valuable for delineating the variable depth to bedrock or pinpointing karst features common to East Tennessee.</p>
 <p>Our field methodologies strictly adhere to standards set by ASTM International, ensuring data defensibility and regulatory compliance across all USA-based projects. The <a href="/cpt-test/">CPT</a> is performed in general accordance with ASTM D5778, employing an electronic cone to measure tip resistance and sleeve friction, from which we derive soil behavior type and a suite of geotechnical parameters. For projects requiring compaction control, we execute the field density test using the nuclear method (ASTM D6938) or, more commonly in Knoxville's residual soils, the <a href="/sand-cone-density/">sand cone method (ASTM D1556)</a> to verify engineered fill placement. These in-situ techniques are often paired with our <a href="/laboratory/">laboratory</a> analysis, where index property tests like <a href="/grain-size/">grain size analysis</a> and <a href="/atterberg-limits/">Atterberg limits</a> are calibrated against field behavior to create a robust geotechnical model of the site.</p>
 <p>Typical Knoxville projects demand a diverse application of In-Situ to manage local construction challenges. For commercial developments in the Turkey Creek area, we use CPT data to design shallow <a href="/foundations/">foundations</a> on the heavily weathered shale and limestone residuum, avoiding costly over-excavation. Infrastructure work, such as stormwater detention basins along First Creek, relies on field density testing to confirm that compacted clay liners meet the permeability requirements specified by the Knox County Department of Engineering and Public Works. Similarly, for residential subdivisions on the steep slopes of the Sequoyah Hills neighborhood, our <a href="/investigation/">investigation</a> teams use dynamic cone penetration testing to verify the consistency of colluvial deposits, ensuring slope stability and proper footing design.</p>
-<img src="/img/ensayo-proctor-1.webp" alt="In-Situ in Knoxville" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>The In-Situ process begins with a review of project plans and historical geologic data to select the optimal test locations and methods. Our field crews mobilize truck-mounted CPT rigs or nuclear density gauges to the site, collecting real-time data that is immediately reviewed by a project engineer for quality assurance. The primary deliverable is a concise, technically rigorous report containing tabulated test results, corrected CPT parameters, and factual interpretations of soil strata, which feed directly into design recommendations for bearing capacity and settlement. This direct field approach eliminates delays from off-site <a href="/laboratory/">laboratory</a> scheduling and provides a more accurate representation of in-place material behavior, ultimately reducing uncertainty and mitigating the risk of construction change orders on your Knoxville project.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../sand-cone-density/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Field density test (sand cone method)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 <section class="block mid-cta-e167-e167" style="padding:2rem 0">
@@ -206,7 +260,8 @@ body>*{max-width:100vw}
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.circle([35.9604,-83.921],{radius:5000,color:'#171717',weight:2,fillColor:'#404040',fillOpacity:0.18}).addTo(m).bindPopup("Knoxville");
+          L.marker([35.9604,-83.921],{icon:L.divIcon({html:'<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 36\" width=\"24\" height=\"36\"><path d=\"M12 0C5.4 0 0 5.4 0 12c0 9 12 24 12 24s12-15 12-24c0-6.6-5.4-12-12-12z\" fill=\"#E11D48\" stroke=\"#FFF\" stroke-width=\"1.5\"/><circle cx=\"12\" cy=\"12\" r=\"4\" fill=\"#FFF\"/></svg>',className:'',iconSize:[24,36],iconAnchor:[12,36],popupAnchor:[0,-32]})}).addTo(m);
+L.circle([35.9604,-83.921],{radius:5000,color:'#171717',weight:2,fillColor:'#404040',fillOpacity:0.18}).addTo(m).bindPopup("Knoxville");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
